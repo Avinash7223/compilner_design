@@ -21,6 +21,7 @@ int main() {
         break;
       }
     }
+    
     if (isalpha(str[i])) {
       res[i] = str[i];
 
