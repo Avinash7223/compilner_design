@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void main() {
+void main() 
+{
   int mat[12][12];
   int i, j, row, col, temp;
   printf("Enter the number of rows and columns for 1st matrix\n");
@@ -11,7 +12,6 @@ void main() {
       scanf("%d", &mat[i][j]);
     }
   }
-
   printf("The matrix\n");
   for (i = 0; i < row; i++) {
     for (j = 0; j < col; j++) {
