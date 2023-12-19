@@ -1,4 +1,5 @@
-//write a program to read a programming sentement and idenfity the all possible tokens and its token(id,value)
+// write a program to read a programming sentement and idenfity the all possible
+// tokens and its token(id,value)
 
 #include <ctype.h>
 #include <stdio.h>
@@ -8,7 +9,8 @@ void isAlphet(char *str) {
   if (strcmp(str, "int") == 0 || strcmp(str, "float") == 0 ||
       strcmp(str, "for") == 0 || strcmp(str, "do") == 0 ||
       strcmp(str, "while") == 0 || strcmp(str, "break") == 0 ||
-      strcmp(str, "if") || strcmp(str, "else") || strcmp(str, "continue")) {
+      strcmp(str, "if") == 0 || strcmp(str, "else") == 0 ||
+      strcmp(str, "continue") == 0) {
     printf("<KWD,%s >\n", (str));
   } else if (isdigit(str[0])) {
     printf("<CONST, %s >\n", (str));
@@ -23,7 +25,7 @@ int isOperator(char c) {
 }
 
 int isSymbol(char c) {
-  return (c == ';' || c == '{' || c == '}' || c == '[' || c == ']');
+  return (c == ';' || c == '{' || c == '}' || c == '[' || c == ']' || c == ',');
 }
 
 int main() {
